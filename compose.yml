@@ -1,0 +1,12 @@
+# Read-only demo UI. Live execution uses the host CLI/API + isolated runner container.
+# No Docker socket is mounted into this web application.
+services:
+  app:
+    build: .
+    ports: ["127.0.0.1:8001:8001"]
+    environment:
+      DEMO_MODE: "true"
+      DATA_DIR: /app/.data
+    volumes: ["runs:/app/.data"]
+volumes:
+  runs:

@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "sum",
+      "task": "Fix add(a,b) to add numbers, including negative values. Add useful tests for your change.",
+      "fixture": "fixtures/sum"
+    },
+    {
+      "id": "clamp",
+      "task": "Implement clamp(x, low, high), clipping to the closed interval. Add useful tests for your change.",
+      "fixture": "fixtures/clamp"
+    },
+    {
+      "id": "dedupe",
+      "task": "Make unique(items) remove duplicates while preserving first occurrence order. Add useful tests for your change.",
+      "fixture": "fixtures/dedupe"
+    },
+    {
+      "id": "mean",
+      "task": "Make mean(values) compute the arithmetic mean, raising ValueError for an empty input. Add useful tests for your change.",
+      "fixture": "fixtures/mean"
+    },
+    {
+      "id": "chunks",
+      "task": "Implement chunks(items,size), returning consecutive lists; reject non-positive size with ValueError. Add useful tests for your change.",
+      "fixture": "fixtures/chunks"
+    },
+    {
+      "id": "slug",
+      "task": "Fix slug(text): lowercase, strip outer whitespace, replace consecutive whitespace with one hyphen. Add useful tests for your change.",
+      "fixture": "fixtures/slug"
+    },
+    {
+      "id": "merge",
+      "task": "Implement merge(defaults,overrides) returning a new dict without mutating inputs. Add useful tests for your change.",
+      "fixture": "fixtures/merge"
+    },
+    {
+      "id": "palindrome",
+      "task": "Make is_palindrome ignore case and non-alphanumeric characters. Add useful tests for your change.",
+      "fixture": "fixtures/palindrome"
+    },
+    {
+      "id": "flatten",
+      "task": "Implement flatten(items) flattening arbitrarily nested lists while keeping non-list elements. Add useful tests for your change.",
+      "fixture": "fixtures/flatten"
+    },
+    {
+      "id": "interval",
+      "task": "Fix overlaps(a,b) for half-open intervals [start,end); touching endpoints do not overlap. Add useful tests for your change.",
+      "fixture": "fixtures/interval"
+    },
+    {
+      "id": "test_add",
+      "task": "Add regression tests for the correct add function in test_solution.py; do not change behavior. Add useful tests for your change.",
+      "fixture": "fixtures/test_add"
+    },
+    {
+      "id": "repair",
+      "task": "Repair divide(a,b), returning None when b is zero; preserve normal floating division. Add useful tests for your change.",
+      "fixture": "fixtures/repair"
+    }
+  ]
+}
