@@ -2,7 +2,7 @@
 
 **把一个工程任务变成可审查的改动。** 一个精简、可观察的 Python 编码 Agent：计划确认、工具调用、隔离测试、有限修复、Diff 交付。
 
-[CI 配置模板](ci/github-actions.yml) · 待 GitHub `workflow` 权限授权启用，远程 CI 尚未运行。
+[![CI](https://github.com/whitecathu/forge-agent-lite/actions/workflows/ci.yml/badge.svg)](https://github.com/whitecathu/forge-agent-lite/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB) ![LangGraph](https://img.shields.io/badge/LangGraph-stateful-147d68) ![License](https://img.shields.io/badge/License-MIT-green)
 
 <img src="docs/screenshot.png" alt="Forge Agent Lite 执行工作台" width="650">
