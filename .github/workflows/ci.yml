@@ -39,7 +39,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: docker build -t forge-agent-lite:ci .
       - run: docker run -d --name forge-smoke -p 127.0.0.1:18001:8001 forge-agent-lite:ci
-      - run: curl --fail --retry 15 --retry-connrefused --retry-delay 2 http://127.0.0.1:18001/api/health
+      - run: curl --fail --retry 15 --retry-all-errors --retry-delay 2 --max-time 5 --retry-max-time 60 http://127.0.0.1:18001/api/health
       - run: curl --fail http://127.0.0.1:18001/ | grep 'script type="module"'
       - run: curl --fail -X POST http://127.0.0.1:18001/api/demo-repository
       - if: always()
